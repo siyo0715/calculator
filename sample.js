@@ -9,11 +9,7 @@ const app = new Vue({
             return this.num1 + this.num2;
         },
         done: function () {
-            if (this.num1 !== 0 && this.num2 !== 0) {
-                return true;
-            } else {
-                return false;
-            }
+            return (this.num1 !== 0 && this.num2 !== 0)            
         }
     }
 })
